@@ -16,7 +16,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: Vitalii Tylyk | .NET / Sitecore / Architecture / DevOps
   description: ".NET / Sitecore / Architecture / DevOps on Vitalii Tylyk&#8230;"
   keywords: [Blog, Portfolio, PaperMod]
   author: Vitalii Tylyk
@@ -73,8 +73,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Vitalii Tylyk \U0001F44B"
+    Content: .NET / Sitecore / Architecture / DevOps
 
   socialIcons:
     - name: twitter
@@ -95,7 +95,7 @@ params:
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hiddenInSingle: false # hide on single page
 
   editPost:
     URL: "https://github.com/<path_to_repo>/content"
@@ -114,16 +114,19 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: Categories
+    - name: Archive
+      url: /archives/
+      weight: 1
+    - name: Search
+      url: /search/
+      weight: 5
+    - name: Categories
       url: /categories/
       weight: 10
-    - identifier: tags
-      name: Tags
+    - name: Tags
       url: /tags/
       weight: 20
-    - identifier: aboutme
-      name: About me
+    - name: About me
       url: /about-me/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
