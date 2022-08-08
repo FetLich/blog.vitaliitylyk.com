@@ -1,8 +1,9 @@
 ---
 title: About me
 author: Vitalii Tylyk
-type: page
-date: 2018-08-29T18:21:49+00:00
+showBreadCrumbs: false
+showReadingTime: false
+showWordCount: false
 
 ---
 My name is Vitalii, Ukrainian by nationality, currently living in the Netherlands.
