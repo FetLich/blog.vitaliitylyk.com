@@ -58,18 +58,18 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    enabled: true # needs to be explicitly set
+    title: Vitalii Tylyk's blog
+    subtitle: ".NET / Sitecore / Architecture / DevOps"
+    imageUrl: "media/avatar.jpg"
+    imageWidth: 160
+    imageHeight: 160
+    imageTitle: Vitalii
     buttons:
       - name: Posts
         url: posts
-      - name: Tags
-        url: tags
+      - name: About me
+        url: about-me
 
   # home-info mode
   homeInfoParams:
