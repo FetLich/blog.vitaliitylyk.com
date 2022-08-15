@@ -1,11 +1,8 @@
 ---
 title: Sitecore + Solr – fault tolerance guide
-author: Vitalii Tylyk
-type: post
 date: 2018-10-28T19:34:07+00:00
-excerpt: A search engine is a crucial component of Sitecore scaled setup, as almost all of the Sitecore server roles depend on it. However, like any other software, it can fail. Therefore, it is very important to make sure that such failures are handled gracefully. Sitecore eventually did a good job in handling Solr connectivity issues, however there are still some pitfalls you should know about.
+summary: A search engine is a crucial component of Sitecore scaled setup, as almost all of the Sitecore server roles depend on it. However, like any other software, it can fail. Therefore, it is very important to make sure that such failures are handled gracefully. Sitecore eventually did a good job in handling Solr connectivity issues, however there are still some pitfalls you should know about.
 url: /sitecore-solr-fault-tolerance-guide/
-featured_image: /wp-content/uploads/2018/10/Sitecore-Solr-740x294.jpg
 categories:
   - Sitecore
 tags:
@@ -15,24 +12,22 @@ tags:
 ---
 A search engine is a crucial component of Sitecore scaled setup, as almost all of the Sitecore server roles depend on it. However, like any other software, it can fail.&nbsp;Therefore, it is very important to make sure that such failures are handled gracefully. Sitecore eventually did a good job in handling Solr connectivity issues, however there are still some pitfalls you should know about.
 
-<div class="wp-block-image">
-  <figure class="aligncenter"><img loading="lazy" width="746" height="296" src="https://i0.wp.com/blog.vitaliitylyk.com/wp-content/uploads/2018/10/Sitecore-Solr.jpg?resize=746%2C296&#038;ssl=1" alt="Solr fault tolerance guilde" class="wp-image-425" srcset="https://i0.wp.com/blog.vitaliitylyk.com/wp-content/uploads/2018/10/Sitecore-Solr.jpg?w=746&ssl=1 746w, https://i0.wp.com/blog.vitaliitylyk.com/wp-content/uploads/2018/10/Sitecore-Solr.jpg?resize=300%2C119&ssl=1 300w, https://i0.wp.com/blog.vitaliitylyk.com/wp-content/uploads/2018/10/Sitecore-Solr.jpg?resize=740%2C294&ssl=1 740w" sizes="(max-width: 746px) 100vw, 746px" data-recalc-dims="1" /></figure>
-</div>
+![Solr fault tolerance guilde](Sitecore-Solr.jpg#center "Sitecore and Solr connection")
 
-<span style="text-decoration: underline;">Disclaimer</span>: this post is not an ultimate guide on how to handle all possible Solr errors, however it provides an idea on what to take into account when using Solr as a Sitecore search engine.
+*Disclaimer:* this post is not an ultimate guide on how to handle all possible Solr errors, however it provides an idea on what to take into account when using Solr as a Sitecore search engine.
 
 ## Sitecore versions earlier than 8.2 Update-1
 
-As discussed here&nbsp;<a href="https://sitecore.stackexchange.com/questions/2993/gracefully-handle-solr-search-connectivity-issues" target="_blank" rel="noreferrer noopener">Gracefully handle Solr search connectivity issues</a> and here <a href="https://blogs.perficientdigital.com/2017/02/07/solr-failure-brings-down-live-sitecore-site/" target="_blank" rel="noreferrer noopener">Solr failure brings down live Sitecore site</a>&nbsp;prior to **Sitecore 8.2 Update-1** Sitecore had a hard time when Solr was not available, bringing the whole site down.&nbsp;
+As discussed here [Gracefully handle Solr search connectivity issues](https://sitecore.stackexchange.com/questions/2993/gracefully-handle-solr-search-connectivity-issues "Gracefully handle Solr search connectivity issues") and here [Solr failure brings down live Sitecore site](https://blogs.perficientdigital.com/2017/02/07/solr-failure-brings-down-live-sitecore-site/ "Solr failure brings down live Sitecore site") prior to **Sitecore 8.2 Update-1** Sitecore had a hard time when Solr was not available, bringing the whole site down.&nbsp;
 
 The fix Sitecore came up with introduces the `IsSolrAliveAgent`, which is a Sitecore job running periodically to check Solr status. In case Solr is not available, Sitecore gracefully handles failures (queries will return empty results). In addition to that, the new&nbsp;`IndexingStateSwitcher`&nbsp;job makes sure that indexing operations are suspended, while Solr is not available.  
 
 
 As soon as Solr becomes available, everything gets back to normal.&nbsp;For the record, the issue reference numbers are 391039 and 94024.
 
-Eventually, in newer Sitecore releases, Solr fault handling became better and better. However, there are&nbsp;still some specific cases where issues might pop up. For example, there is an issue with initialization of the&nbsp;`SwitchOnRebuildSolrCloudSearchIndex`&nbsp;in case Solr is not available at the moment when Sitecore starts up. If this is your case, you should contact Sitecore Product Support Services to double check that this fix is applicable for you:&nbsp;<a href="https://github.com/SitecoreSupport/Sitecore.Support.163850.171950/releases/tag/8.2.6.0" target="_blank" rel="noreferrer noopener">https://github.com/SitecoreSupport/Sitecore.Support.163850.171950/releases/tag/8.2.6.0</a>
+Eventually, in newer Sitecore releases, Solr fault handling became better and better. However, there are&nbsp;still some specific cases where issues might pop up. For example, there is an issue with initialization of the&nbsp;`SwitchOnRebuildSolrCloudSearchIndex`&nbsp;in case Solr is not available at the moment when Sitecore starts up. If this is your case, you should contact Sitecore Product Support Services to double check that this fix is applicable for you: [https://github.com/SitecoreSupport/Sitecore.Support.163850.171950/releases/tag/8.2.6.0](https://github.com/SitecoreSupport/Sitecore.Support.163850.171950/releases/tag/8.2.6.0)
 
-There is also a nice blog post about the whole story of the IsSolrAliveAgent by Grant Killian:&nbsp;<a href="https://grantkillian.wordpress.com/2018/09/28/the-tale-of-the-issolraliveagent-for-sitecore/" target="_blank" rel="noreferrer noopener">The tale of the IsSolrAliveAgent for Sitecore</a>
+There is also a nice blog post about the whole story of the IsSolrAliveAgent by Grant Killian: [The tale of the IsSolrAliveAgent for Sitecore](https://grantkillian.wordpress.com/2018/09/28/the-tale-of-the-issolraliveagent-for-sitecore/ "The tale of the IsSolrAliveAgent for Sitecore")
 
 ## Sitecore 9 and rendering datasource validation
 
@@ -44,11 +39,12 @@ Starting from **Sitecore 9.0 Update-1**, Sitecore validates datasource using a s
 
 However **Sitecore 9.0 Update-1** comes with an unfortunate bug: the above mentioned processor does not have a check on whether it is executed in the Experience Editor context. This means that the logic of checking the rendering datasource for validity will also be executed as a part of normal page rendering. And in case Solr is not available &#8211; boom, **all website renderings will not be rendered and you will see empty pages on your live website.**
 
-<span style="text-decoration: underline;"><strong>Note</strong></span>**:** this is also relevant if you are using Azure Search provider.
+*Note:* this is also relevant if you are using Azure Search provider.
 
 The symptoms are the following errors in Sitecore logs:
 
-<pre class="wp-block-preformatted">WARN '{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}' is not valid datasource for master or user does not have permissions to access.<br />WARN Failed to execute datasource query System.NullReferenceException: Object reference not set to an instance of an object.</pre>
+> WARN '{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}' is not valid datasource for master or user does not have permissions to access.
+> WARN Failed to execute datasource query System.NullReferenceException: Object reference not set to an instance of an object.
 
 This bug has been fixed in **Sitecore 9.0 Update-2.**&nbsp;If you are running **Update-1**&nbsp;you will have several options:
 
