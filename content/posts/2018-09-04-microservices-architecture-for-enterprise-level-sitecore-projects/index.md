@@ -57,11 +57,11 @@ To handle these issues, Sitecore Javascript Services come to the rescue.
 
 ## Sitecore JSS &#8211; Sitecore as a headless CMS microservice
 
-Recently (finally!) Sitecore made a great move and brought modern front-end development (SPAs on top of `Angular`, `React`, `Vue.js`) into Sitecore world. I will not dig into details here, this topic deserves a separate post, or maybe even a separate dedicated website with documentation, and luckily Sitecore has created one: [https://jss.sitecore.net/](https://jss.sitecore.net/).  So why not to make one more step and split up the presentation layer? In the following diagram, front-end application is an orchestrator of application as a whole:
+Recently (finally!) Sitecore made a great move and brought modern front-end development (SPAs on top of `Angular`, `React`, `Vue.js`) into Sitecore world. I will not dig into details here, this topic deserves a separate post, or maybe even a separate dedicated website with documentation, and luckily Sitecore has created one: [https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/index-en.html](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/index-en.html).  So why not to make one more step and split up the presentation layer? In the following diagram, front-end application is an orchestrator of application as a whole:
 
 ![Sitecore full on micro services architecture](sitecore-full-on-micro-services-architecture.png#center "Sitecore full on micro services architecture")
 
-Now front-end Sitecore developers can finally build Single Page Applications consuming Sitecore content from an API (or from local JSON files, when working in [disconnected mode](https://jss.sitecore.net/docs/fundamentals/application-modes#disconnected-developer-mode)), sitting behind their MacBooks.
+Now front-end Sitecore developers can finally build Single Page Applications consuming Sitecore content from an API (or from local JSON files, when working in [disconnected mode](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/working-disconnected-in-jss.html)), sitting behind their MacBooks.
 
 Looks amazing, doesn&#8217;t it? It is, but microservices architecture with all its benefits also brings additional challenges and extra complexity.
 

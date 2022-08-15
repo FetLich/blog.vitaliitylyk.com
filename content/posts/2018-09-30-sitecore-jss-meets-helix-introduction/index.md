@@ -36,7 +36,7 @@ Normally in a Feature layer module you can find:
 
     **Classic approach:** Sitecore Controller Renderings use MVC controllers to implement extra logic, for example, retrieval of Sitecore items, mapping\converting them to a view model to be used in a view.  
   
-    **JSS approach**: front-end application communicates with Sitecore via the [Layout Service API](https://jss.sitecore.net/docs/fundamentals/services/layout-service) with no Razor rendering engine involved. Consequently, MVC controller is no longer required in-between to render a view. If you need to extend\customize the Layout Service output, you can implement custom [Rendering Contents Resolvers](https://jss.sitecore.net/docs/techniques/extending-layout-service/layoutservice-rendering-contents) or [Layout Service context extensions](https://jss.sitecore.net/docs/techniques/extending-layout-service/layoutservice-extending-context).  
+    **JSS approach**: front-end application communicates with Sitecore via the [Layout Service API](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/sitecore-layout-service.html) with no Razor rendering engine involved. Consequently, MVC controller is no longer required in-between to render a view. If you need to extend\customize the Layout Service output, you can implement custom [Rendering Contents Resolvers](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/customizing-the-layout-service-rendering-output.html) or [Layout Service context extensions](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/extending-context-data-returned-by-the-layout-service.html).  
 
     **Summary:** you don&#8217;t need MVC controllers in your JSS solutions.  
   
