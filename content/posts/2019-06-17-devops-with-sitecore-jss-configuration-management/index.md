@@ -43,13 +43,11 @@ Instead of baking the configuration values to *.js bundles, the idea here is to 
   * Your Node.JS instance would naturally have access to environment variables
   * To use the same configuration on the client side, your Node.JS server code could propagate the config values to the browser by embedding them to the server response (e.g. put them to the _window object_). For example:
 
-```
-<script>
+```js
 window.app = {    
       sitecoreApiKey: "{2B558AF2-636F-4BD7-BAA0-45633E6E8D5C}",
       sitecoreApiHost: "http://sitecore.local"
 };
-</script>
 ```
 
 This technique is used in the Umbrella React JSS starter kit, do check it out, it has a lot of other nice features besides that: [https://github.com/macaw-interactive/react-jss-typescript-starter/blob/develop/samples/react-typescript/README.md](https://github.com/macaw-interactive/react-jss-typescript-starter/blob/develop/samples/react-typescript/README.md)

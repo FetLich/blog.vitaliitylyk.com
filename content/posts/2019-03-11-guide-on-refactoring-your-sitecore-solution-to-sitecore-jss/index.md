@@ -192,7 +192,7 @@ JSS documentation suggests 2 deployment topologies: headless topology and integr
 
 In [Headless topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/jss-topologies.html#headless-topology "Headless topology") your JSS frontend application code is hosted on separate from Sitecore Node.js instances:
 
-![Headless topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/image/162e39f490ba2d.svg "Headless topology")
+![Headless topology](headless-topology.svg "Headless topology")
 
 Not only it scales better, but also opens new possibilities:
 
@@ -201,7 +201,7 @@ Not only it scales better, but also opens new possibilities:
 
 However, this topology requires extra effort (setting up Node.js deployment pipeline) and hardware. Therefore, as a good starting point you might go for the [Integrated topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/jss-topologies.html#integrated-topology "Integrated topology").
 
-![Integrated topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/image/162e39f491019d.svg "Integrated topology")
+![Integrated topology](integrated-topology.svg "Integrated topology")
 
 In this topology your frontend application code is pre-rendered by Node.js installed on the same server, where your Sitecore instance is (Sitecore is calling Node.js process internally to render the app).
 

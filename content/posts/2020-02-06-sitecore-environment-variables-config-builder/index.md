@@ -14,7 +14,7 @@ tags:
 ---
 Inspired by ASP.NET [configuration builders](https://docs.microsoft.com/en-us/aspnet/config-builder "configuration builders") I thought: wouldn&#8217;t it be awesome to be able to modify Sitecore configuration via environment variables in a similar way? This is especially relevant in Docker world.
 
-As [I&#8217;ve mentioned before, to be a good Docker citizen](https://blog.vitaliitylyk.com/making-sitecore-a-good-docker-citizen/ "I've mentioned before, to be a good Docker citizen"), a containerized application has to support configuration via environment variables.
+As [I&#8217;ve mentioned before, to be a good Docker citizen](/making-sitecore-a-good-docker-citizen/ "I've mentioned before, to be a good Docker citizen"), a containerized application has to support configuration via environment variables.
 
 Out of the box, Sitecore supports `$(env:ENVIRONMENT_VARIABLE_NAME)` syntax to use environment variables in your configuration. However, this has 2 limitations:
 
@@ -46,7 +46,7 @@ At first I considered to follow Microsoft approach and develop a custom configur
 
 So I ended up with customizing the Sitecore configuration section handler. By default, Sitecore config section is defined in Web.config in the following way:
 
-```
+```xml
 <configSections>
     ...
     <section name="sitecore" type="Sitecore.Configuration.RuleBasedConfigReader, Sitecore.Kernel" />

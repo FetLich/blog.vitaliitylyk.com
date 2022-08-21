@@ -51,7 +51,7 @@ Sitecore uses 2 types of configuration: native .NET/ASP.NET configuration (Web.c
 
 In the custom Sitecore configuration, you can use `$(env:VARIABLE_NAME)` syntax to refer to environment variables, for example:
 
-```
+```xml
 <setting name="MyFeature.MySetting">
     $(env:MyFeature.MySetting)
 </setting>
@@ -90,7 +90,7 @@ To enable this you only need to install the `Microsoft.Configuration.Configurati
 
 **Add a config section**
 
-```
+```xml
 <configSections>
   ...
   <section name="configBuilders" type="System.Configuration.ConfigurationBuildersSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" restartOnExternalChanges="false" requirePermission="false" />
@@ -101,7 +101,7 @@ To enable this you only need to install the `Microsoft.Configuration.Configurati
 
 Pay attention to the `prefix` attribute. This means that only environment variables starting with _ConnectionString__ and _AppSetting__ will be injected.
 
-```
+```xml
 <configBuilders>
     <builders>
       <add name="Environment_AppSettings" mode="Greedy" prefix="AppSetting_" stripPrefix="true" type="Microsoft.Configuration.ConfigurationBuilders.EnvironmentConfigBuilder, Microsoft.Configuration.ConfigurationBuilders.Environment, Version=1.0.0.0, Culture=neutral" />
@@ -112,7 +112,7 @@ Pay attention to the `prefix` attribute. This means that only environment variab
 
 **Update `connectionStrings` and `appSettings` sections to enable config builders**
 
-```
+```xml
 <appSettings configBuilders="Environment_AppSettings">
  ...
 </appSettings>
@@ -156,7 +156,7 @@ I have implemented an example of such a script, which you can find below:<figure
 
 To handle the rolling behavior, the script needs a way to detect when Sitecore has finished writing to a file. This is achieved by searching for the _end file marker_ (`------END------` in this example), which log4net will append before file handle is released. It does not do it by default, so you have to patch Sitecore log4net configuration in the following way:
 
-```
+```xml
 <?xml version="1.0"?>
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>

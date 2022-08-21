@@ -128,7 +128,7 @@ Nevertheless, it is still a valid solution in case you have a fixed amount of le
 
 For the menu items example with 3 levels of items, the GraphQL query (for the [Integrated GraphQL](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/integrated-graphql-in-jss-apps.html "Integrated GraphQL")) might look like:
 
-```
+```graphql
 {
   dsItem: item(path: $datasource) {
     id

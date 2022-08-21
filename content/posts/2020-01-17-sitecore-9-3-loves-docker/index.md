@@ -23,7 +23,7 @@ Some time ago I wrote about [making Sitecore a good Docker citizen](/making-site
 
 Sitecore 9.3 comes in with pre-configured [configuration builders](https://docs.microsoft.com/en-us/aspnet/config-builder "configuration builders"), making it possible to set `appSettings` and `connectionStrings` via environment variables out of the box. Here is how configuration looks like in 9.3 web.config:
 
-```
+```xml
 <configBuilders>
     <builders>
       <add name="SitecoreAppSettingsBuilder" mode="Strict" prefix="SITECORE_APPSETTINGS_" stripPrefix="true"
