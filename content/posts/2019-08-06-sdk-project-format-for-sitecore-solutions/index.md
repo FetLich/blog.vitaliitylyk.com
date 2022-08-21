@@ -1,6 +1,5 @@
 ---
 title: SDK project format for Sitecore solutions
-author: Vitalii Tylyk
 date: 2019-08-06T08:45:14+00:00
 summary: Nowadays SDK Visual Studio project format is mainly used by .NET Core projects. It is lean, offers a lot of great features and is generally awesome. But can we use it in traditional ASP.NET Sitecore solutions? What are the benefits and pitfalls?
 url: /sdk-project-format-for-sitecore-solutions/
