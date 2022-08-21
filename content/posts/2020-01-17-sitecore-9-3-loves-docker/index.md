@@ -2,6 +2,7 @@
 title: Sitecore 9.3 loves Docker
 date: 2020-01-17T13:58:21+00:00
 summary: Sitecore 9.3 release includes some features which improve containers support, but at the time of writing they are not mentioned neither in release notes nor in documentation. In this post I highlight these features, since I consider them an important step in direction of containers support.
+description: "Overview of new features in Sitecore 9.3 which improve Docker containers support: configuration via environment variables and health checks."
 url: /sitecore-9-3-loves-docker/
 featured_image: /wp-content/uploads/2020/01/sitecore-93-loves-docker-740x226.png
 categories:
@@ -31,7 +32,7 @@ Sitecore 9.3 comes in with pre-configured [configuration builders](https://docs.
       <add name="SitecoreConnectionStringsBuilder" mode="Strict" prefix="SITECORE_CONNECTIONSTRINGS_" stripPrefix="true"
         type="Microsoft.Configuration.ConfigurationBuilders.EnvironmentConfigBuilder, Microsoft.Configuration.ConfigurationBuilders.Environment, Version=1.0.0.0, Culture=neutral"/>
     </builders>
-  </configBuilders>
+</configBuilders>
 ```
 
 So for example when you set `SITECORE_CONNECTIONSTRINGS_WEB` environment variable for your Docker container, Sitecore uses it as a connection string for your web database. To set an application setting, you use `SITECORE_APPSETTINGS_` prefix, for example: `SITECORE_APPSETTINGS_ROLE:DEFINE`. You can find more examples of possible values in docker-images repository: https://github.com/Sitecore/docker-images/blob/0f8039719d80fc95a9c81b846707b73fb1055aaf/build/windows/tests/9.3.x/docker-compose.xm.yml

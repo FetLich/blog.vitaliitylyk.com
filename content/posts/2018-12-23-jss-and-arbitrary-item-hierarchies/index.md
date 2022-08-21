@@ -2,6 +2,7 @@
 title: JSS and arbitrary item hierarchies
 date: 2018-12-23T20:20:10+00:00
 summary: Quite often in Sitecore development you have to work with hierarchical item structures, which resemble your data model. Example could be a multi-level menu or, as in my case, forms. At the time of writing, out-of-the-box Sitecore JSS is not able to serialize item structures with arbitrary number of levels deep into a JSON tree. Luckily, like the most of Sitecore functionality, JSS is easily customizable ;)
+description: How to deal with arbitrary item hierarchies in Sitecore JSS applications. Implementation of a custom Rendering Contents Resolver.
 url: /jss-and-arbitrary-item-hierarchies/
 categories:
   - Sitecore

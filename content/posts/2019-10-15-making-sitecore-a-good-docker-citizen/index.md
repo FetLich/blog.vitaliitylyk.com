@@ -2,6 +2,7 @@
 title: Making Sitecore a good Docker citizen
 date: 2019-10-15T08:32:22+00:00
 summary: Lately more and more people get interested in running Sitecore in Docker containers. So how do you make Sitecore a good Docker citizen?
+description: "How to make Sitecore a good Docker citizen: managing Sitecore configuration via environment variables and tailing Sitecore logs to Docker console."
 url: /making-sitecore-a-good-docker-citizen/
 categories:
   - DevOps

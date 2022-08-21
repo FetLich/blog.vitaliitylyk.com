@@ -2,6 +2,7 @@
 title: Microservices architecture for enterprise level Sitecore projects
 date: 2018-09-04T18:44:04+00:00
 summary: Business logic heavy Sitecore applications are often built as monoliths, which turn out to be a maintenance nightmare over time. If you are building a Sitecore project which is more complex than a set of content pages, then welcome under the cover.
+description: Splitting up enterprise level monolithic Sitecore projects into microservices by using Sitecore JSS and ASP.NET Core. Benefits and challenges.
 url: /microservices-architecture-for-enterprise-level-sitecore-projects/
 cover:
   image: "sitecore-full-on-micro-services-architecture.png"

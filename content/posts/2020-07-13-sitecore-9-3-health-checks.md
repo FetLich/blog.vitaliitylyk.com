@@ -1,9 +1,8 @@
 ---
 title: Sitecore 9.3 health checks
-author: Vitalii Tylyk
-type: post
 date: 2020-07-13T14:08:54+00:00
-excerpt: Starting from version 9.3, Sitecore includes health check HTTP endpoints which you can use to check health of your Sitecore instance. In this post I will show how to add custom health checks.
+summary: Starting from version 9.3, Sitecore includes health check HTTP endpoints which you can use to check health of your Sitecore instance. In this post I will show how to add custom health checks.
+description: Sitecore health monitoring. How to implement a custom health check for Sitecore?
 url: /sitecore-9-3-health-checks/
 featured_image: /wp-content/uploads/2020/07/health-checks-461x430.png
 categories:

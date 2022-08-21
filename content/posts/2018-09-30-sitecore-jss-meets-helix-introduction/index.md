@@ -2,6 +2,7 @@
 title: 'Sitecore JSS meets Helix: introduction'
 date: 2018-09-30T17:07:22+00:00
 summary: 'A while ago, the Technical Preview 4 of Sitecore Javascript Services has been released, and GA release is coming soon, together with Sitecore 9.1. I am really excited about this and in my company we have already established JSS as a standard for new projects. But... How does it fit with Helix architecture? Do we still need an ORM tool like GlassMapper with JSS? If these questions are also bugging your mind - read on.'
+description: "Considerations related to implementing a project on Sitecore Javascript Services (JSS): Helix architecture, ORM tools and solution setup."
 url: /sitecore-jss-meets-helix-introduction/
 cover:
   image: "sitecore-jss-helix.jpg"

@@ -3,6 +3,7 @@ title: Sitecore environment variables config builder
 date: 2020-02-06T11:57:04+00:00
 summary: "Inspired by ASP.NET configuration builders I thought: wouldn't it be awesome to be able to modify Sitecore configuration via environment variables in a similar way? This is especially relevant in Docker world."
 url: /sitecore-environment-variables-config-builder/
+description: "Using Environment variables for managing Sitecore configuration: settings, sc.variables and site settings in Docker"
 categories:
   - DevOps
   - Sitecore

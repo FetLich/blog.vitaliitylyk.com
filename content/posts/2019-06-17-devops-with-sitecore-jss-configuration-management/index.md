@@ -2,6 +2,7 @@
 title: 'DevOps with Sitecore JSS: configuration management'
 date: 2019-06-17T08:14:35+00:00
 summary: I have already touched upon deploying JSS apps in my Guide on migrating your solution to Sitecore JSS. In this post I want to extend a bit on the topic, in particular on configuration management.
+description: How to manage Sitecore JSS application configuration per environment. Creating environment agnostic JSS app packages.
 url: /devops-with-sitecore-jss-configuration-management/
 categories:
   - Sitecore
