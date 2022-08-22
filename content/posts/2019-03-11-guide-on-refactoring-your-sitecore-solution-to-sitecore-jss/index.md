@@ -17,23 +17,7 @@ tags:
 
 Sitecore JSS provides a lot of benefits in comparison to the &#8220;classic&#8221; Sitecore MVC/<del>Webforms</del> development approach in terms of both usage of the latest and greatest frontend frameworks, but also improving the development workflow. In this post I&#8217;ll describe steps and considerations of migrating an existing Sitecore solution to JSS, based on a real world project experience.
 
-So, you&#8217;ve decided to migrate your Sitecore solution to JSS. On the high level, these are the steps you need to take:
-
-  1. Choose frontend framework
-  2. Choose development workflow
-  3. Define code repository structure
-  4. Refactor backend code
-      1. Setup JSS application
-      2. Refactor Sitecore templates
-      3. Get rid of MVC Controllers, Razor views, ORM code
-      4. Create JSS renderings
-      5. Consider Helix architecture
-      6. Update Sitecore Analytics code
-  5. Implement frontend application (_can be done in parallel with the previous step_) 
-  6. Define deployment topology
-  7. Update build and deployment process
-
-Let&#8217;s dig into each of them in details. 
+Let&#8217;s dig into each of the steps in details. 
 
 ## 1. Choose frontend framework
 

@@ -4,6 +4,7 @@ date: 2019-04-23T07:49:25+00:00
 summary: 'When developing with Sitecore JSS, you can use 2 approaches for shaping JSON data for a rendering  in LayoutService output: using a Rendering Contents Resolver or integrated GraphQL. They are mutually exclusive by design, however, there are situations when you might want to use both of them for the same rendering.'
 description: A custom Sitecore JSS rendering contents resolver, which appends results of a GraphQL query defined on a rendering item to LayoutService output.
 url: /combining-integrated-graphql-and-rendering-contents-resolver-output/
+showtoc: false
 categories:
   - Sitecore
 tags:

@@ -97,7 +97,7 @@ To accomplish this, I have implemented a custom Rendering Contents Resolver, whi
 
 ## Implementing the resolver
 
-### **Step 1:**&nbsp;implement the code
+### Step 1: implement the code
 
 Create a custom rendering contents resolver by inheriting from the&nbsp;`Sitecore.LayoutService.ItemRendering.ContentsResolvers.RenderingContentsResolver` class.
 
@@ -109,7 +109,7 @@ The code below recursively iterates through items, serializing their children to
 
 {{< gist vitaliitylyk 8a8216dd0cd5f4c484c7912aa26ee192 >}}
 
-### **Step 2: create a resolver Sitecore item**
+### Step 2: create a resolver Sitecore item
 
 To be able to use the resolver in your renderings, you need to create a Rendering Contents Resolver item under&nbsp;_/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers_. For example:
 
