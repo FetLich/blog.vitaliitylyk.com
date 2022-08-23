@@ -16,9 +16,9 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Vitalii Tylyk | .NET / Sitecore / Architecture / DevOps
-  description: ".NET / Sitecore / Architecture / DevOps on Vitalii Tylyk&#8230;"
-  keywords: [Blog, Portfolio, PaperMod]
+  title: Vitalii Tylyk | Software Engineering
+  description: "Blog about Software Engineering by Vitalii Tylyk"
+  keywords: [Blog, "Software Engineering"]
   author: Vitalii Tylyk
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -41,6 +41,7 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+  hideFooter: true
 
   assets:
     disableHLJS: true
@@ -54,7 +55,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Vitalii Tylyk's blog
-    subtitle: ".NET / Sitecore / Architecture / DevOps"
+    subtitle: "Software Engineering"
     imageUrl: "media/avatar.jpg"
     imageWidth: 160
     imageHeight: 160
