@@ -6,6 +6,7 @@ description: "Considerations related to implementing a project on Sitecore Javas
 url: /sitecore-jss-meets-helix-introduction/
 cover:
   image: "sitecore-jss-helix.jpg"
+  relative: true
 categories:
   - Sitecore
 tags:

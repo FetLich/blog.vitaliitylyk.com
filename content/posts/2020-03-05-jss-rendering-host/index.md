@@ -6,6 +6,7 @@ description: Sitecore JSS rendering host use cases, technical details and instru
 url: /jss-rendering-host/
 cover:
   image: "rendering-host-ngrok.png"
+  relative: true
 categories:
   - Sitecore
 tags:

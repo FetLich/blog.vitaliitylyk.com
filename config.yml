@@ -62,9 +62,9 @@ params:
     imageTitle: Vitalii
     buttons:
       - name: Posts
-        url: posts
+        url: /posts/
       - name: About me
-        url: about-me
+        url: /about-me/
 
   socialIcons:
     - name: twitter

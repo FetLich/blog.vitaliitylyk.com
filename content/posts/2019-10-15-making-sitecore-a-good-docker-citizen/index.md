@@ -6,6 +6,7 @@ description: "How to make Sitecore a good Docker citizen: managing Sitecore conf
 url: /making-sitecore-a-good-docker-citizen/
 cover:
   image: "docker-sitecore.png"
+  relative: true
 categories:
   - DevOps
   - Sitecore

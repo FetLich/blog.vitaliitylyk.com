@@ -6,6 +6,7 @@ description: How to manage Sitecore JSS application configuration per environmen
 url: /devops-with-sitecore-jss-configuration-management/
 cover:
   image: "devops.png"
+  relative: true
 categories:
   - Sitecore
 tags:

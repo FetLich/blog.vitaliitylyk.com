@@ -6,6 +6,7 @@ description: Sitecore health monitoring. How to implement a custom health check 
 url: /sitecore-9-3-health-checks/
 cover:
   image: "health-checks.png"
+  relative: true
 categories:
   - DevOps
   - Sitecore

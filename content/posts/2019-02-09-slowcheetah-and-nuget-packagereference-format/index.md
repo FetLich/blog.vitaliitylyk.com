@@ -9,6 +9,7 @@ description: Workaround for SlowCheetah not transforming config files when using
 url: /slowcheetah-and-nuget-packagereference-format/
 cover:
   image: "slowcheetah.jpg"
+  relative: true
 categories:
   - DevOps
 tags:

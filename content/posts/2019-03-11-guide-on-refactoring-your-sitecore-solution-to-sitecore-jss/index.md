@@ -7,6 +7,7 @@ description: "How to convert an existing Sitecore MVC/Webforms solution to Sitec
 url: /guide-on-refactoring-your-sitecore-solution-to-sitecore-jss/
 cover:
   image: "jss-logo.png"
+  relative: true
 categories:
   - Sitecore
 tags:

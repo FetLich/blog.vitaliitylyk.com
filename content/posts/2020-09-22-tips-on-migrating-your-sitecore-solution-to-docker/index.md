@@ -6,6 +6,7 @@ description: Important things to consider when migrating your Sitecore solution 
 url: /tips-on-migrating-your-sitecore-solution-to-docker/
 cover:
   image: "Moby-logo.png"
+  relative: true
 showtoc: true
 tocopen: true
 categories:

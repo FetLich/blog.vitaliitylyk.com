@@ -6,6 +6,7 @@ description: Guide on how to prepare for Solr down times, and pitfalls related t
 url: /sitecore-solr-fault-tolerance-guide/
 cover:
   image: "Sitecore-Solr.jpg"
+  relative: true
 categories:
   - Sitecore
 tags:
