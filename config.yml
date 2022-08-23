@@ -56,7 +56,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Vitalii Tylyk's blog
     subtitle: "Software Engineering"
-    imageUrl: "media/avatar.jpg"
+    imageUrl: "avatar.jpg"
     imageWidth: 160
     imageHeight: 160
     imageTitle: Vitalii
