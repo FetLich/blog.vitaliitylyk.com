@@ -4,7 +4,8 @@ date: 2020-01-17T13:58:21+00:00
 summary: Sitecore 9.3 release includes some features which improve containers support, but at the time of writing they are not mentioned neither in release notes nor in documentation. In this post I highlight these features, since I consider them an important step in direction of containers support.
 description: "Overview of new features in Sitecore 9.3 which improve Docker containers support: configuration via environment variables and health checks."
 url: /sitecore-9-3-loves-docker/
-featured_image: /wp-content/uploads/2020/01/sitecore-93-loves-docker-740x226.png
+cover:
+  image: "sitecore-93-loves-docker.png"
 categories:
   - DevOps
   - Sitecore

@@ -4,7 +4,8 @@ date: 2020-03-05T12:32:14+00:00
 summary: Sitecore JSS rendering host is an awesome but also an underused feature. So I decided to promote it a bit and describe some use cases from our project.
 description: Sitecore JSS rendering host use cases, technical details and instructions on how to set it up
 url: /jss-rendering-host/
-featured_image: /wp-content/uploads/2020/02/rendering-host-ngrok.png
+cover:
+  image: "rendering-host-ngrok.png"
 categories:
   - Sitecore
 tags:

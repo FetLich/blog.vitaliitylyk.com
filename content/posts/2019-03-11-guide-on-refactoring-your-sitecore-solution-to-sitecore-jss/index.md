@@ -5,6 +5,8 @@ summary: |
   Sitecore JSS provides a lot of benefits in comparison to the "classic" Sitecore MVC/Webforms development approach in terms of both usage of the latest and greatest frontend frameworks, but also improving the development workflow. In this post I'll describe steps and considerations of migrating an existing Sitecore solution to JSS, based on a real world project experience.
 description: "How to convert an existing Sitecore MVC/Webforms solution to Sitecore JSS: from code changes to deployment considerations"
 url: /guide-on-refactoring-your-sitecore-solution-to-sitecore-jss/
+cover:
+  image: "jss-logo.png"
 categories:
   - Sitecore
 tags:

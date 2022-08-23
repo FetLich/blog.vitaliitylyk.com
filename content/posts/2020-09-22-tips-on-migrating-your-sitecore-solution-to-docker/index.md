@@ -4,7 +4,8 @@ date: 2020-09-22T08:22:47+00:00
 summary: Now that Sitecore officially supports Docker containers, many of us started considering migrating their Sitecore solutions to Docker setup. But how hard is that and what are the important steps/pain points to consider for production-ready setup?
 description: Important things to consider when migrating your Sitecore solution to Docker & Kubernetes setup.
 url: /tips-on-migrating-your-sitecore-solution-to-docker/
-featured_image: /wp-content/uploads/2020/09/Moby-logo.png
+cover:
+  image: "Moby-logo.png"
 showtoc: true
 tocopen: true
 categories:

@@ -7,6 +7,8 @@ summary: |
   Recently I’ve been converting a Visual Studio solution to the NuGet PackageReference format. After conversion, I have encountered an issue that SlowCheetah config transformations stopped working properly when using MsBuild (which is relevant for CI/CD builds). Luckily, I have found a workaround, which I thought is worth sharing.
 description: Workaround for SlowCheetah not transforming config files when using MsBuild and NuGet PackageReference format.
 url: /slowcheetah-and-nuget-packagereference-format/
+cover:
+  image: "slowcheetah.jpg"
 categories:
   - DevOps
 tags:

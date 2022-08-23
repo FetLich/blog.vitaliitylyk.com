@@ -4,6 +4,8 @@ date: 2018-10-28T19:34:07+00:00
 summary: A search engine is a crucial component of Sitecore scaled setup, as almost all of the Sitecore server roles depend on it. However, like any other software, it can fail. Therefore, it is very important to make sure that such failures are handled gracefully. Sitecore eventually did a good job in handling Solr connectivity issues, however there are still some pitfalls you should know about.
 description: Guide on how to prepare for Solr down times, and pitfalls related to graceful error handling, fault tolerance and high availability Solr setup for Sitecore.
 url: /sitecore-solr-fault-tolerance-guide/
+cover:
+  image: "Sitecore-Solr.jpg"
 categories:
   - Sitecore
 tags:
