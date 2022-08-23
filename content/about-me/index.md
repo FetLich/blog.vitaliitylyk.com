@@ -4,6 +4,7 @@ author: Vitalii Tylyk
 showBreadCrumbs: false
 showReadingTime: false
 showWordCount: false
+comments: false
 
 ---
 ![Vitalii Tylyk](avatar.jpg#center)
