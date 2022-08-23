@@ -135,9 +135,9 @@ Here is a brief process of refactoring a Sitecore MVC/Webforms rendering to a JS
 Depending on complexity of your component, you have several options on how to serialize it’s contents to JSON:
 
   * Use out of the box rendering contents resolver. Sitecore [ships with 5 of them included](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/customizing-the-layout-service-rendering-output.html#choosing-or-configuring-a-built-in-rendering-contents-resolver "ships with 5 of them included"), which cover most of the basic scenarios: _Datasource Resolver, Datasource Item Children Resolver, Context Item Resolver, Context Item Children Resolver, Folder Filter Resolver_
-  * If out of the box ones do not fit, you can [build your custom one](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/customizing-the-layout-service-rendering-output.html#creating-an-irenderingcontentsresolver-interface "build your custom one"). For example, if your datasource is not a single item or children of an item, but a multilevel arbitrary tree hierarchy, e.g. multilevel menu, then you might want to roll your own one. I have blogged recently on [how to build a resolver which is able to serialize arbitrary item trees]({{< ref "2018-12-23-jss-and-arbitrary-item-hierarchies" >}} "how to build a resolver which is able to serialize arbitrary item trees").
+  * If out of the box ones do not fit, you can [build your custom one](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/customizing-the-layout-service-rendering-output.html#creating-an-irenderingcontentsresolver-interface "build your custom one"). For example, if your datasource is not a single item or children of an item, but a multilevel arbitrary tree hierarchy, e.g. multilevel menu, then you might want to roll your own one. I have blogged recently on [how to build a resolver which is able to serialize arbitrary item trees](/jss-and-arbitrary-item-hierarchies/ "how to build a resolver which is able to serialize arbitrary item trees").
   * There is also an option to shape the JSON response for your component via [integrated GraphQL](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/integrated-graphql-in-jss-apps.html "Integrated GraphQL"). In a nutshell, there is a field on rendering item where you can define a GraphQL query which would retrieve all the needed data for your component and shape it to JSON. 
-  * In certain scenarios you might want to combine the power of both rendering contents resolver and integrated GraphQL. You can achieve this with a [bit of customization]({{< ref "2019-04-23-combining-integrated-graphql-and-rendering-contents-resolver-output" >}} "bit of customization").
+  * In certain scenarios you might want to combine the power of both rendering contents resolver and integrated GraphQL. You can achieve this with a [bit of customization](/combining-integrated-graphql-and-rendering-contents-resolver-output/ "bit of customization").
 
 **Provide extra data for renderings**
 
@@ -149,7 +149,7 @@ Sometimes you need to provide some extra data to your FE app, for example shared
 
 ### 4.5 Consider Helix architecture
 
-The topic of Helix and Sitecore JSS deserves a separate post on it&#8217;s own, which I coincidentally already have written already some time ago 😉 : [Sitecore JSS meets Helix]({{< ref "2018-09-30-sitecore-jss-meets-helix-introduction" >}} "Sitecore JSS meets Helix").
+The topic of Helix and Sitecore JSS deserves a separate post on it&#8217;s own, which I coincidentally already have written already some time ago 😉 : [Sitecore JSS meets Helix](/sitecore-jss-meets-helix-introduction/ "Sitecore JSS meets Helix").
 
 ### 4.6 Update Sitecore Analytics code
 
@@ -166,7 +166,7 @@ I must say JSS team did really good job in providing [examples on Github](https:
 Here are some tips for FE app implementation:
 
   * Unlike most of the Sitecore MVC/Webforms implementations, JSS apps are Single Page Applications. Obviously, this brings some changes in UX behavior of your website (no page reloads, etc) and you might want to consider implementing things differently than in old implementation. **This is very important to consider and to consult with your UX team upfront.**
-  * I strongly recommend you not to enforce Helix in your fronted app and give your frontend developers freedom to use their own best practices, tooling and structure. More thoughts on this topic can be found here: [Sitecore JSS meets Helix]({{< ref "2018-09-30-sitecore-jss-meets-helix-introduction" >}} "Sitecore JSS meets Helix")
+  * I strongly recommend you not to enforce Helix in your fronted app and give your frontend developers freedom to use their own best practices, tooling and structure. More thoughts on this topic can be found here: [Sitecore JSS meets Helix](/sitecore-jss-meets-helix-introduction/ "Sitecore JSS meets Helix")
   * Make sure to use helpers provided by JSS framework when rendering Sitecore item field values to make sure the fields are editable in Experience Editor. It is important for FE developers to get used to this, preferably in the beginning of a project to avoid refactoring in future.
   * Make sure to check the **Client Frameworks** section on the JSS documentation sites for your chosen framework. For example, it provides some [tips and best practices for Angular](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/tips-for-working-with-jss-for-angular.html "tips and best practices for Angular"), for instance on lazy loading components.
   * To avoid page reloads when clicking links, make sure to you are [converting Sitecore links into router links](https://kamsar.net/index.php/2018/09/Routing-Sitecore-links-with-JSS/ "converting Sitecore links into router links")
@@ -233,8 +233,7 @@ This will create the &#8220;scjssconfig.json&#8221; file with tokenized #{Layout
 
 This command will build the app and copy the resulting files to the specified **destination** path. In case of **Integrated** topology, this path should point to the website root of your Sitecore site build artifact. If you are using **Headless** topology, then you would probably want to create a separate package to be deployed over to your Node.js instances.
 
-
-You can find some extra information on topic of creating environment agnostic JSS application packages [in this blog post.]({{< ref "2019-06-17-devops-with-sitecore-jss-configuration-management" >}} "in this blog post.")
+You can find some extra information on topic of creating environment agnostic JSS application packages [in this blog post.](/devops-with-sitecore-jss-configuration-management/ "in this blog post.")
 
 ## Results
 

@@ -6,6 +6,7 @@ description: "Overview of new features in Sitecore 9.3 which improve Docker cont
 url: /sitecore-9-3-loves-docker/
 cover:
   image: "sitecore-93-loves-docker.png"
+  relative: true
 categories:
   - DevOps
   - Sitecore

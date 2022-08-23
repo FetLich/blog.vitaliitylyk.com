@@ -46,7 +46,7 @@ Normally in a Feature layer module you can find:
     
   * API Controllers
   
-    Most often you use API controllers to provide front-end with non-Sitecore related data, for example, data coming from your Business Domain. I see no changes here, however, I strongly recommend you considering to split out all Business APIs from Sitecore. You can find more details on this in [my previous blog post]({{< ref "2018-09-04-microservices-architecture-for-enterprise-level-sitecore-projects" >}} "my previous blog post").  
+    Most often you use API controllers to provide front-end with non-Sitecore related data, for example, data coming from your Business Domain. I see no changes here, however, I strongly recommend you considering to split out all Business APIs from Sitecore. You can find more details on this in [my previous blog post](/microservices-architecture-for-enterprise-level-sitecore-projects/ "my previous blog post").  
 
     &nbsp;
     

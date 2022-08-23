@@ -17,7 +17,7 @@ tags:
 ---
 ![Managing configuration in Sitecore JSS deployments](devops.png#center "Managing configuration in Sitecore JSS deployments")
 
-I have already touched upon deploying JSS apps in my [Guide on migrating your solution to Sitecore JSS]({{< ref "2019-03-11-guide-on-refactoring-your-sitecore-solution-to-sitecore-jss" >}} "Guide on migrating your solution to Sitecore JSS"). In this post I want to extend a bit on the topic, in particular on configuration management.
+I have already touched upon deploying JSS apps in my [Guide on migrating your solution to Sitecore JSS](/guide-on-refactoring-your-sitecore-solution-to-sitecore-jss/ "Guide on migrating your solution to Sitecore JSS"). In this post I want to extend a bit on the topic, in particular on configuration management.
 
 Questions related to this topic popped up occasionally in Sitecore community Slack, so I decided to write up a short blog post 😉
 
@@ -29,7 +29,7 @@ The typical requirement and the best practice in DevOps is to have environment-a
 
 With JSS apps the story is not different. What makes creation of environment-agnostic package more challenging is that, the [sample JSS apps](https://github.com/Sitecore/jss/tree/dev/samples "sample JSS apps") provided by Sitecore embed the `apiKey` and `layoutServiceHost` configuration settings to the resulting bundles during the build time.
 
-In case you are using the [Integrated Topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/jss-topologies.html#integrated-topology "Integrated topology"), the solution is pretty simple: use blank &#8220;&#8221; value for `layoutServiceHost` and setup a fixed `apiKey` for all your environments. For the details on why it works like this &#8211; checkout the [&#8220;Update build and deployment process&#8221; section of my JSS migration guide]({{< ref "2019-03-11-guide-on-refactoring-your-sitecore-solution-to-sitecore-jss#update-build-and-deployment-process" >}} "&#8220;Update build and deployment process&#8221; section of my JSS migration guide").
+In case you are using the [Integrated Topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/jss-topologies.html#integrated-topology "Integrated topology"), the solution is pretty simple: use blank &#8220;&#8221; value for `layoutServiceHost` and setup a fixed `apiKey` for all your environments. For the details on why it works like this &#8211; checkout the [&#8220;Update build and deployment process&#8221; section of my JSS migration guide](/guide-on-refactoring-your-sitecore-solution-to-sitecore-jss/#update-build-and-deployment-process "&#8220;Update build and deployment process&#8221; section of my JSS migration guide").
 
 In this post I would like to focus on the more complex case: [Headless Topology](https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/jss-topologies.html#headless-topology "Headless topology"), when you actually have to configure different values for your `layoutServiceHost` and `apiKey` settings per environment.
 
