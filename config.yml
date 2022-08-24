@@ -129,3 +129,14 @@ markup:
     guessSyntax: true
     # lineNos: true
     style: monokai
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+  twitter:
+    enableDNT: true
+  vimeo:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
