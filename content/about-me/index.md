@@ -18,4 +18,4 @@ Also, I have spent a decent amount of time developing on Sitecore platform. For 
 
 Hope you enjoy it and find something useful for yourself here! :)
 
-If you want to contact me, please use one of the social networks listed on the home page or by email: vitaliytyl at gmail dot com.
+If you want to contact me, please use one of the social networks listed on the home page or by email: vitaliytyl at gmail dot com (this doesn't work).
